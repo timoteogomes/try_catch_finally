@@ -1,0 +1,27 @@
+
+try {
+  let num1 = parseInt (prompt("Digite um número: "));
+  let num2 = parseInt (prompt("Digite um outro número: "));
+  let opcao = prompt("Escolha a operação a ser realizada: +; -, *,/");
+  switch (opcao) {
+    case "+":
+      console.log(num1 + num2);
+      break;
+      case "-":
+        console.log(num1 - num2);
+        break;
+        case "*":
+          console.log(num1 * num2);
+          break;
+          case "/":
+          console.log(num1 / num2);
+          break;
+  }
+}
+      catch (error) {
+        console.log("Erro: ", error.message);
+        
+      }
+      finally {
+        console.log('Bloco "finally" sempre será executado.');
+      }
